@@ -1,5 +1,11 @@
 import { test, expect } from 'vitest';
-import { add, subtract, mulitply, divide } from './challenges';
+import {
+  add,
+  subtract,
+  mulitply,
+  divide,
+  palindromeChecker,
+} from './challenges';
 
 test('add function adds two numbers', () => {
   const result = add(1, 2);
@@ -22,5 +28,29 @@ test('mulitply function mulitplies two numbers', () => {
 test('divide function that divides two numbers', () => {
   const result = divide(10, 5);
   const expected = 2;
+  expect(result).toBe(expected);
+});
+
+test('divide function that divides two numbers', () => {
+  const result = divide(10, 5);
+  const expected = 2;
+  expect(result).toBe(expected);
+});
+
+// test('palindrome function to check if word is palindrome', () => {
+//   const result = palindromeChecker('craig');
+//   const expected = true;
+//   expect(result).toBe(expected);
+// });
+
+test('palindrome function to check if word is palindrome', () => {
+  const result = palindromeChecker('racecar');
+  const expected = true;
+  expect(result).toBe(expected);
+});
+
+test('palindrome function to check if word is palindrome', () => {
+  const result = palindromeChecker('level');
+  const expected = true;
   expect(result).toBe(expected);
 });

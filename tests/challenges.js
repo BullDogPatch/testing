@@ -13,3 +13,8 @@ export const mulitply = (a, b) => {
 export const divide = (a, b) => {
   return a / b;
 };
+
+// Stretch
+export const palindromeChecker = (word) => {
+  return word === word.split('').reverse().join('');
+};
