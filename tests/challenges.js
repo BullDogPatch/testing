@@ -20,5 +20,5 @@ export const palindromeChecker = (word) => {
 };
 
 export const anagramChecker = (word1, word2) => {
-  return word1.split('').sort() === word2.split('').sort();
+  return word1.split('').sort().join('') === word2.split('').sort().join('');
 };

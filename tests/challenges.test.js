@@ -56,6 +56,30 @@ test('palindrome function to check if word is palindrome', () => {
   expect(result).toBe(expected);
 });
 
+test('palindrome function to check if word is palindrome', () => {
+  const result = palindromeChecker('madam');
+  const expected = true;
+  expect(result).toBe(expected);
+});
+
+// test('palindrome function to check if word is palindrome', () => {
+//   const result = palindromeChecker('nurses run');
+//   const expected = true;
+//   expect(result).toBe(expected);
+// });
+
+// describe('Words that are palindromic', function () {
+//   test('madam', function () {
+//     const result = palindromeChecker('madam');
+//     expect(result).toBe(true);
+//   });
+
+//   test('nurses run', function () {
+//     const result = palindromeChecker('nurses run');
+//     expect(result).toBe(true);
+//   });
+// });
+
 test('anagram function to check if word is an anagram of another word', () => {
   const result = anagramChecker('cat', 'tac');
   const expected = true;
