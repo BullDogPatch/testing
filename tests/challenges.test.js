@@ -5,6 +5,7 @@ import {
   mulitply,
   divide,
   palindromeChecker,
+  anagramChecker,
 } from './challenges';
 
 test('add function adds two numbers', () => {
@@ -51,6 +52,12 @@ test('palindrome function to check if word is palindrome', () => {
 
 test('palindrome function to check if word is palindrome', () => {
   const result = palindromeChecker('level');
+  const expected = true;
+  expect(result).toBe(expected);
+});
+
+test('anagram function to check if word is an anagram of another word', () => {
+  const result = anagramChecker('cat', 'tac');
   const expected = true;
   expect(result).toBe(expected);
 });

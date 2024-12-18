@@ -18,3 +18,7 @@ export const divide = (a, b) => {
 export const palindromeChecker = (word) => {
   return word === word.split('').reverse().join('');
 };
+
+export const anagramChecker = (word1, word2) => {
+  return word1.split('').sort() === word2.split('').sort();
+};
