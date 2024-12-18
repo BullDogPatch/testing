@@ -11,7 +11,7 @@ const palindromeChecker = (word) => {
   const sanitizedString = word.split('').reverse().join('');
   console.log(word);
   console.log(sanitizedString);
-  return word === word.split('').reverse().join('');
+  return word === sanitizedString;
 };
 
 console.log(palindromeChecker('racecar'));
